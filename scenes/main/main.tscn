@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://d2xjipgen38g2"]
 
+[ext_resource type="PackedScene" uid="uid://c676g8ttgn28a" path="res://scenes/ui/pause_screen.tscn" id="1_hyk8p"]
+[ext_resource type="Texture2D" uid="uid://1c3q0lw65krl" path="res://icon.svg" id="1_iuonh"]
+[ext_resource type="Theme" uid="uid://c4am47i4a7lfa" path="res://resources/themes/main.theme" id="3_k2fmo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iuonh"]
+size = Vector2(117, 117)
+
 [node name="Main scene" type="Node2D" unique_id=1889810806]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1689391839]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=211745710]
+texture = ExtResource("1_iuonh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=465734456]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_iuonh")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=290206311]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=543200367]
+
+[node name="PauseScreen" parent="CanvasLayer" unique_id=1586455800 instance=ExtResource("1_hyk8p")]
+theme = ExtResource("3_k2fmo")
+
+[editable path="CanvasLayer/PauseScreen"]
