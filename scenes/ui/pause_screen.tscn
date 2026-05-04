@@ -41,15 +41,17 @@ offset_right = 363.0
 offset_bottom = 211.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_fvuwu")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UIPanelContainer" unique_id=1510084760]
 layout_mode = 2
 
 [node name="Label" type="Label" parent="UIPanelContainer/VBoxContainer" unique_id=1932850534]
+custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
 theme = ExtResource("2_fvuwu")
 theme_type_variation = &"Title"
-text = "Pause"
+text = "PAUSE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
