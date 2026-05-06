@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://c676g8ttgn28a" path="res://scenes/ui/pause_screen.tscn" id="1_hyk8p"]
 [ext_resource type="Texture2D" uid="uid://1c3q0lw65krl" path="res://icon.svg" id="1_iuonh"]
-[ext_resource type="Theme" uid="uid://c4am47i4a7lfa" path="res://resources/themes/main.theme" id="3_k2fmo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iuonh"]
 size = Vector2(117, 117)
@@ -23,6 +22,3 @@ shape = SubResource("RectangleShape2D_iuonh")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=543200367]
 
 [node name="PauseScreen" parent="CanvasLayer" unique_id=1586455800 instance=ExtResource("1_hyk8p")]
-theme = ExtResource("3_k2fmo")
-
-[editable path="CanvasLayer/PauseScreen"]
