@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2xjipgen38g2"]
 
-[ext_resource type="PackedScene" uid="uid://c676g8ttgn28a" path="res://scenes/ui/pause_screen.tscn" id="1_hyk8p"]
 [ext_resource type="Texture2D" uid="uid://1c3q0lw65krl" path="res://icon.svg" id="1_iuonh"]
+[ext_resource type="PackedScene" uid="uid://cbkbhmpeop5u5" path="res://scenes/ui/ui_manager.tscn" id="2_iuonh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iuonh"]
 size = Vector2(117, 117)
@@ -21,4 +21,4 @@ shape = SubResource("RectangleShape2D_iuonh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=543200367]
 
-[node name="PauseScreen" parent="CanvasLayer" unique_id=1586455800 instance=ExtResource("1_hyk8p")]
+[node name="ui_manager" parent="CanvasLayer" unique_id=1183294465 instance=ExtResource("2_iuonh")]

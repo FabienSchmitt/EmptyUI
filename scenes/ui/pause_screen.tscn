@@ -6,10 +6,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fvuwu"]
 shader = ExtResource("1_milqs")
-shader_parameter/blur_amount = 0.921
+shader_parameter/blur_amount = 0.0
 shader_parameter/tint = Color(0, 0, 0, 1)
-shader_parameter/tint_strength = 0.1228
-shader_parameter/saturation = 0.5702
+shader_parameter/tint_strength = 0.0
+shader_parameter/saturation = 1.0
 
 [node name="PauseScreen" type="Control" unique_id=1586455800]
 layout_mode = 3
@@ -21,6 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xceqw")
 menu_opened_amount = 0.614
+animation_duration = 0.1
 
 [node name="BlurColorRect" type="ColorRect" parent="." unique_id=19490991]
 unique_name_in_owner = true
@@ -69,21 +70,25 @@ size_flags_vertical = 3
 layout_mode = 2
 
 [node name="ResumeButton" type="Button" parent="UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer" unique_id=173665014]
+unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_fvuwu")
 text = "Resume"
 
 [node name="RestartButton" type="Button" parent="UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer" unique_id=2047422337]
+unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_fvuwu")
 text = "Restart"
 
 [node name="SettingsButton" type="Button" parent="UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer" unique_id=568837274]
+unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_fvuwu")
 text = "Settings"
 
 [node name="QuitButton" type="Button" parent="UIPanelContainer/VBoxContainer/CenterContainer/VBoxContainer" unique_id=1604380667]
+unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("2_fvuwu")
 text = "Quit"
